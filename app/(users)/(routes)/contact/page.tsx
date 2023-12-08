@@ -2,7 +2,7 @@ import { ContactForm } from "../../_components/contact-form"
 
 const ContactPage = ()=>{
 return(
-  <div className="container">
+  <div className="container py-8">
     <ContactForm />
   </div>
 )

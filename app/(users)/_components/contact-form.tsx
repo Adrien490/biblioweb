@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { Form, FormField, FormItem, FormLabel } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 export const ContactForm = () => {
   const form = useForm({
@@ -17,7 +18,6 @@ export const ContactForm = () => {
   });
 
   const onSubmit = (data: any) => {
-    // Ici, vous pouvez gérer l'envoi des données du formulaire
     console.log(data);
     toast.success("Message envoyé avec succès !");
   };
@@ -70,13 +70,13 @@ export const ContactForm = () => {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>Message</FormLabel>
-                <textarea {...field} placeholder="Votre message" className="py-2 rounded-md bg-muted w-full" />
+                <Textarea rows={7} {...field} placeholder="Votre message" />
               </FormItem>
             )}
           />
 
-          <Button type="submit" className="rounded-xl">
-            Envoyer Message
+          <Button type="submit">
+            Envoyer
           </Button>
         </form>
       </Form>
