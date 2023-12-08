@@ -1,4 +1,4 @@
-import Navbar from "@/app/(users)/_components/navbar"
+import {Navbar} from "@/app/(users)/_components/navbar"
 
 const UsersLayout = ({children}: {children: React.ReactNode}) =>{
   return (
