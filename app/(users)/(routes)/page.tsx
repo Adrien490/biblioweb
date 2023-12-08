@@ -18,23 +18,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Section Nouveautés */}
-      <section className="container mx-auto px-6 md:px-12 my-12">
-        <h2 className="text-4xl font-bold text-center mb-8">Nouveautés</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {/* Ici, ajoutez des composants de carte pour les nouveaux articles */}
-        </div>
-      </section>
-
-      {/* Section Formules */}
-      <section className="bg-muted py-12">
-        <div className="container mx-auto px-6 md:px-12">
-          <h2 className="text-4xl font-bold text-center mb-8">Nos Formules</h2>
-          <div className="flex flex-wrap justify-center">
-            {/* Ici, ajoutez des composants de carte pour les différentes formules */}
-          </div>
-        </div>
-      </section>
 
     </div>
   );
