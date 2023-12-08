@@ -30,12 +30,9 @@ const Page = () => {
 	return (
 		<div>
 			{resources.map((resource) => (
-				<div
-					key={resource.id}
-					className="flex gap-4"
-				>
-					<Resource resource={resource} />
-				</div>
+				
+					<Resource key={resource.id} resource={resource} />
+				
 			))}
 		</div>
 	);
