@@ -39,7 +39,7 @@ export const Navbar = () => {
 				<div className="flex">
 					<ModeToggle />
 					{user ? (
-						<UserButton />
+						<UserButton afterSignOutUrl="/" />
 					) : (
 						<SignInButton mode="modal">Se connecter</SignInButton>
 					)}
